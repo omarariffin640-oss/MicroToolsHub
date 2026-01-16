@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #111;
+}
+
+.nav a {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.logo {
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.btn {
+    padding: 12px 20px;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.tool-card {
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
