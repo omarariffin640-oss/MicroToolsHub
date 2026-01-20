@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ========== SEO META TAGS ========== -->
+    <title>MicroToolsHub : Word Counter, Character Counter, Text Cleaner</title>
+    <meta name="description"
+        content="MicroToolsHub offers 100% free online tools: Word Counter, Character Counter, Text Cleaner, Date Calculator, Case Converter. No login required. All Toolsv1 tools completely free.">
+    <meta name="keywords"
+        content="free online tools, word counter online, character counter free, text cleaner tool, date difference calculator, case converter, bullet to paragraph, MicroToolsHub, Toolsv1, free text tools, online utilities">
+    <meta name="author" content="MicroToolsHub">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="MicroToolsHub - Free Online Tools Collection">
+    <meta property="og:description"
+        content="Free word counter, character counter, text cleaner and more. No login required.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://microtoolshub.com">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://microtoolshub.com">
+
+    <!-- Structured Data / Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "MicroToolsHub",
+        "description": "Collection of free online tools including word counter, character counter, text cleaner and more",
+        "url": "https://microtoolshub.com",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+
+    <!-- ========== ASSETS ========== -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo with H1 for SEO -->
+                <div class="logo">
+                    <h1>MicroToolsHub</h1>
+                </div>
+
+                <!-- Main Navigation -->
+                <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+                    <a href="#home" class="nav-item active" aria-current="page">Home</a>
+                    <a href="#all" class="nav-item" data-filter="all">All Tools</a>
+                    <a href="#v1" class="nav-item" data-filter="v1">Toolsv1</a>
+                    <a href="#v2" class="nav-item" data-filter="v2">Toolsv2</a>
+                    <a href="#v3" class="nav-item" data-filter="v3">Toolsv3</a>
+                    <a href="#guides" class="nav-item">Guides</a>
+                    <a href="#resources" class="nav-item">Resources</a>
+                    <a href="#about" class="nav-item">About</a>
+                    <a href="#notify" class="nav-item notify-btn" onclick="showNotifyModal()">
+                        <i class="fas fa-bell" aria-hidden="true"></i> Notify Me
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" role="region" aria-label="Introduction">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Free Online Tools for Everyday Tasks</h2>
+                <p class="hero-subtitle">
+                    <span class="highlight">Toolsv1:</span> Use our <strong>free word counter</strong>,
+                    <strong>character counter online</strong>, <strong>text cleaner tool</strong>,
+                    <strong>date calculator</strong>, and more. 100% Free.
+                </p>
+
+                <!-- Search with ARIA label -->
+                <div class="hero-search">
+                    <div class="search-wrapper">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                        <input type="text" id="searchTools"
+                            placeholder="Search free tools: word counter, text cleaner, date calculator..."
+                            aria-label="Search tools">
+                    </div>
+                    <p class="search-note">All Toolsv1 tools are completely free with unlimited usage</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content" role="main">
+        <div class="container">
+            <!-- Available Tools Section -->
+            <section class="section available-tools" aria-labelledby="available-tools-title">
+                <div class="section-header">
+                    <h3 id="available-tools-title"><i class="fas fa-check-circle"></i> Available Now (Toolsv1)</h3>
+                    <p class="section-subtitle">Free online tools you can use right away - no registration needed</p>
+                </div>
+
+                <div class="tools-grid" id="toolsGrid">
+                    <!-- Tools loaded by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Coming Soon Section -->
+            <section class="section coming-soon" aria-labelledby="coming-soon-title">
+                <div class="section-header">
+                    <h3 id="coming-soon-title"><i class="fas fa-clock"></i> Tools in Development</h3>
+                    <p class="section-subtitle">New online tools we're working on for future release</p>
+                </div>
+
+                <div class="upcoming-list">
+                    <!-- Toolsv2 Tools -->
+                    <div class="upcoming-item">
+                        <div class="upcoming-icon v2" aria-label="Toolsv2">v2</div>
+                        <div class="upcoming-info">
+                            <h4>PDF Converter - Convert Files Online</h4>
+                            <p>Free PDF to Word converter and document conversion tool</p>
+                            <span class="upcoming-status">In Development</span>
+                        </div>
+                    </div>
+
+                    <div class="upcoming-item">
+                        <div class="upcoming-icon v2" aria-label="Toolsv2">v2</div>
+                        <div class="upcoming-info">
+                            <h4>Image Optimizer - Compress Images Free</h4>
+                            <p>Online image compression and optimization tool for web</p>
+                            <span class="upcoming-status">In Development</span>
+                        </div>
+                    </div>
+
+                    <!-- Toolsv3 Tools -->
+                    <div class="upcoming-item">
+                        <div class="upcoming-icon v3" aria-label="Toolsv3">v3</div>
+                        <div class="upcoming-info">
+                            <h4>AI Text Rewriter - Rewrite Content Online</h4>
+                            <p>AI-powered text rewriting and improvement tool</p>
+                            <span class="upcoming-status">Planned</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA with keyword-rich text -->
+                <div class="cta-box">
+                    <p>Want to be notified when new <strong>free online tools</strong> launch?</p>
+                    <button class="cta-button" onclick="showNotifyModal()" aria-label="Get notified about new tools">
+                        <i class="fas fa-envelope"></i> Get Notified About New Tools
+                    </button>
+                </div>
+            </section>
+
+            <!-- SEO Content Section -->
+            <section class="section seo-content" aria-labelledby="seo-content-title">
+                <div class="section-header">
+                    <h3 id="seo-content-title"><i class="fas fa-info-circle"></i> About Our Free Online Tools</h3>
+                </div>
+
+                <div class="content-grid">
+                    <div class="content-card">
+                        <h4>Why Choose MicroToolsHub?</h4>
+                        <ul>
+                            <li><strong>100% Free</strong> - All Toolsv1 tools are completely free forever</li>
+                            <li><strong>No Login Required</strong> - Use our tools immediately without registration</li>
+                            <li><strong>No Limits</strong> - Unlimited usage on all free tools</li>
+                            <li><strong>Mobile Friendly</strong> - Works on all devices and browsers</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-card">
+                        <h4>Popular Free Tools</h4>
+                        <ul>
+                            <li><strong>Word Counter Online</strong> - Count words and characters in any text</li>
+                            <li><strong>Character Counter Free</strong> - Check text length with/without spaces</li>
+                            <li><strong>Text Cleaner Tool</strong> - Remove extra spaces and clean messy text</li>
+                            <li><strong>Date Calculator</strong> - Calculate days between dates online</li>
+                            <li><strong>Case Converter</strong> - Convert text to uppercase/lowercase</li>
+                            <li><strong>Bullet to Paragraph</strong> - Convert bullet points to paragraph</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- NOTIFY MODAL -->
+    <div class="modal-overlay" id="notifyModal" role="dialog" aria-modal="true" aria-labelledby="notify-modal-title"
+        aria-hidden="true">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 id="notify-modal-title"><i class="fas fa-bell"></i> Get Notified About New Tools</h3>
+                <button class="modal-close" aria-label="Close notification modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-intro">
+                    <p>We'll email you when new <strong>free online tools</strong> are added to MicroToolsHub.</p>
+                </div>
+
+                <div class="notify-form">
+                    <div class="form-group">
+                        <label for="notifyName">Your Name</label>
+                        <input type="text" id="notifyName" placeholder="John Doe" aria-label="Your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notifyEmail">Email Address *</label>
+                        <input type="email" id="notifyEmail" placeholder="you@example.com" required
+                            aria-label="Email address">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Which tools interest you?</label>
+                        <div class="interest-checkboxes">
+                            <label class="checkbox-label">
+                                <input type="checkbox" checked aria-label="Toolsv2 tools">
+                                <span>Toolsv2 (More converters & utilities)</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" aria-label="Toolsv3 tools">
+                                <span>Toolsv3 (Advanced & AI tools)</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" aria-label="All new tools">
+                                <span>All new free tools</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="submit-btn" onclick="submitNotification()" aria-label="Submit notification request">
+                        <i class="fas fa-paper-plane"></i> Submit Notification Request
+                    </button>
+
+                    <p class="form-note">
+                        <i class="fas fa-lock"></i> We respect your privacy. No spam, ever.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>MicroToolsHub</h2>
+                    <p>Free online tools for everyday tasks</p>
+                </div>
+
+                <div class="footer-links">
+                    <a href="#tools">Free Tools</a>
+                    <a href="#guides">Usage Guides</a>
+                    <a href="#resources">Resources</a>
+                    <a href="#about">About Us</a>
+                    <a href="#" onclick="showNotifyModal()" aria-label="Get notified about new tools">Notify Me</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 MicroToolsHub. All Toolsv1 tools are and will remain 100% free.</p>
+                <p class="footer-contact">
+                    Questions? <a href="mailto:contact@microtoolshub.com">contact@microtoolshub.com</a>
+                </p>
+                <!-- SEO Footer Links -->
+                <div class="seo-footer-links">
+                    <a href="#word-counter">Free Word Counter</a> |
+                    <a href="#character-counter">Character Counter Online</a> |
+                    <a href="#text-cleaner">Text Cleaner Tool</a> |
+                    <a href="#date-calculator">Date Calculator</a> |
+                    <a href="#case-converter">Case Converter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="tools.js"></script>
+</body>
+
+</html>
